@@ -6,11 +6,14 @@
 //
 
 import UIKit
-import SnapKit
 
 final class TabBarController: UITabBarController {
 
     // MARK: Properties
+    
+    let searchVC = SearchViewController(viewModel: SearchViewModel())
+        .configureTabBarItem(title: "Search", image: UIImage(named: "magnifyingglass"))
+        .embedNavigationController()
     
     // MARK: View Life Cycle
 
@@ -18,11 +21,6 @@ final class TabBarController: UITabBarController {
         super.init(nibName: nil, bundle: nil)
         
         view.backgroundColor = .systemBackground
-        
-        let tabBarAppearance = UITabBar.appearance()
-        tabBarAppearance.tintColor = .label
-        tabBarAppearance.barTintColor = .black
-        tabBarAppearance.isTranslucent = true
     }
 
     required init?(coder: NSCoder) {
@@ -36,7 +34,7 @@ final class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.viewControllers =
+        self.viewControllers = [searchVC]
     }
 }
 
