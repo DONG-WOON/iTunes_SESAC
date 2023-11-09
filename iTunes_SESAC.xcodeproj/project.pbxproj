@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		72C485F32AFBC2C700138960 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C485F22AFBC2C700138960 /* AppDelegate.swift */; };
 		72C485F52AFBC2C700138960 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C485F42AFBC2C700138960 /* SceneDelegate.swift */; };
-		72C485F72AFBC2C700138960 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C485F62AFBC2C700138960 /* ViewController.swift */; };
-		72C485FA2AFBC2C700138960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C485F82AFBC2C700138960 /* Main.storyboard */; };
 		72C485FC2AFBC2C900138960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C485FB2AFBC2C900138960 /* Assets.xcassets */; };
 		72C485FF2AFBC2C900138960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C485FD2AFBC2C900138960 /* LaunchScreen.storyboard */; };
+		72C4861C2AFD341D00138960 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C4861B2AFD341D00138960 /* UIView+Extension.swift */; };
+		72C486282AFD363C00138960 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C486272AFD363C00138960 /* API.swift */; };
+		72C4862D2AFD374100138960 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 72C4862C2AFD374100138960 /* Moya */; };
+		72C4862F2AFD374100138960 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 72C4862E2AFD374100138960 /* RxMoya */; };
+		72C486322AFD375200138960 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 72C486312AFD375200138960 /* RxDataSources */; };
+		72C486352AFD376600138960 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 72C486342AFD376600138960 /* RxBlocking */; };
+		72C486372AFD376600138960 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 72C486362AFD376600138960 /* RxCocoa */; };
+		72C486392AFD376600138960 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 72C486382AFD376600138960 /* RxRelay */; };
+		72C4863B2AFD376600138960 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 72C4863A2AFD376600138960 /* RxSwift */; };
+		72C4863E2AFD378F00138960 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 72C4863D2AFD378F00138960 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		72C485EF2AFBC2C700138960 /* iTunes_SESAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunes_SESAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C485F22AFBC2C700138960 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72C485F42AFBC2C700138960 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		72C485F62AFBC2C700138960 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		72C485F92AFBC2C700138960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72C485FB2AFBC2C900138960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72C485FE2AFBC2C900138960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72C486002AFBC2C900138960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72C4861B2AFD341D00138960 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		72C486272AFD363C00138960 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72C486392AFD376600138960 /* RxRelay in Frameworks */,
+				72C4863E2AFD378F00138960 /* SnapKit in Frameworks */,
+				72C486322AFD375200138960 /* RxDataSources in Frameworks */,
+				72C486352AFD376600138960 /* RxBlocking in Frameworks */,
+				72C486372AFD376600138960 /* RxCocoa in Frameworks */,
+				72C4862F2AFD374100138960 /* RxMoya in Frameworks */,
+				72C4862D2AFD374100138960 /* Moya in Frameworks */,
+				72C4863B2AFD376600138960 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +72,111 @@
 		72C485F12AFBC2C700138960 /* iTunes_SESAC */ = {
 			isa = PBXGroup;
 			children = (
-				72C485F22AFBC2C700138960 /* AppDelegate.swift */,
-				72C485F42AFBC2C700138960 /* SceneDelegate.swift */,
-				72C485F62AFBC2C700138960 /* ViewController.swift */,
-				72C485F82AFBC2C700138960 /* Main.storyboard */,
-				72C485FB2AFBC2C900138960 /* Assets.xcassets */,
-				72C485FD2AFBC2C900138960 /* LaunchScreen.storyboard */,
-				72C486002AFBC2C900138960 /* Info.plist */,
+				72C486062AFBC34300138960 /* Application */,
+				72C486202AFD348000138960 /* DIContainer */,
+				72C4861D2AFD345F00138960 /* Domain-Layer */,
+				72C4861F2AFD347300138960 /* Presentation-Layer */,
+				72C486222AFD355C00138960 /* Network */,
+				72C486082AFBC37000138960 /* Extension */,
+				72C486072AFBC34800138960 /* Resource */,
 			);
 			path = iTunes_SESAC;
+			sourceTree = "<group>";
+		};
+		72C486062AFBC34300138960 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				72C486002AFBC2C900138960 /* Info.plist */,
+				72C485FD2AFBC2C900138960 /* LaunchScreen.storyboard */,
+				72C485F42AFBC2C700138960 /* SceneDelegate.swift */,
+				72C485F22AFBC2C700138960 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		72C486072AFBC34800138960 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				72C485FB2AFBC2C900138960 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		72C486082AFBC37000138960 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				72C4861B2AFD341D00138960 /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		72C486092AFBC4B500138960 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		72C4861D2AFD345F00138960 /* Domain-Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Domain-Layer";
+			sourceTree = "<group>";
+		};
+		72C4861F2AFD347300138960 /* Presentation-Layer */ = {
+			isa = PBXGroup;
+			children = (
+				72C486242AFD35FC00138960 /* Search */,
+				72C486232AFD35F400138960 /* Tab */,
+				72C486092AFBC4B500138960 /* Design */,
+			);
+			path = "Presentation-Layer";
+			sourceTree = "<group>";
+		};
+		72C486202AFD348000138960 /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		72C486222AFD355C00138960 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				72C486272AFD363C00138960 /* API.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		72C486232AFD35F400138960 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				72C486262AFD360B00138960 /* View */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		72C486242AFD35FC00138960 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				72C486252AFD360500138960 /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		72C486252AFD360500138960 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		72C486262AFD360B00138960 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +195,16 @@
 			dependencies = (
 			);
 			name = iTunes_SESAC;
+			packageProductDependencies = (
+				72C4862C2AFD374100138960 /* Moya */,
+				72C4862E2AFD374100138960 /* RxMoya */,
+				72C486312AFD375200138960 /* RxDataSources */,
+				72C486342AFD376600138960 /* RxBlocking */,
+				72C486362AFD376600138960 /* RxCocoa */,
+				72C486382AFD376600138960 /* RxRelay */,
+				72C4863A2AFD376600138960 /* RxSwift */,
+				72C4863D2AFD378F00138960 /* SnapKit */,
+			);
 			productName = iTunes_SESAC;
 			productReference = 72C485EF2AFBC2C700138960 /* iTunes_SESAC.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +233,12 @@
 				Base,
 			);
 			mainGroup = 72C485E62AFBC2C700138960;
+			packageReferences = (
+				72C4862B2AFD374100138960 /* XCRemoteSwiftPackageReference "Moya" */,
+				72C486302AFD375200138960 /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				72C486332AFD376600138960 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				72C4863C2AFD378F00138960 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 72C485F02AFBC2C700138960 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +255,6 @@
 			files = (
 				72C485FF2AFBC2C900138960 /* LaunchScreen.storyboard in Resources */,
 				72C485FC2AFBC2C900138960 /* Assets.xcassets in Resources */,
-				72C485FA2AFBC2C700138960 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72C485F72AFBC2C700138960 /* ViewController.swift in Sources */,
+				72C4861C2AFD341D00138960 /* UIView+Extension.swift in Sources */,
 				72C485F32AFBC2C700138960 /* AppDelegate.swift in Sources */,
+				72C486282AFD363C00138960 /* API.swift in Sources */,
 				72C485F52AFBC2C700138960 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +275,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		72C485F82AFBC2C700138960 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				72C485F92AFBC2C700138960 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		72C485FD2AFBC2C900138960 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +408,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iTunes_SESAC/Info.plist;
+				INFOPLIST_FILE = iTunes_SESAC/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +435,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iTunes_SESAC/Info.plist;
+				INFOPLIST_FILE = iTunes_SESAC/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -356,6 +476,84 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		72C4862B2AFD374100138960 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+		72C486302AFD375200138960 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		72C486332AFD376600138960 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		72C4863C2AFD378F00138960 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		72C4862C2AFD374100138960 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72C4862B2AFD374100138960 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		72C4862E2AFD374100138960 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72C4862B2AFD374100138960 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		72C486312AFD375200138960 /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72C486302AFD375200138960 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+		72C486342AFD376600138960 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72C486332AFD376600138960 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		72C486362AFD376600138960 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72C486332AFD376600138960 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		72C486382AFD376600138960 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72C486332AFD376600138960 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		72C4863A2AFD376600138960 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72C486332AFD376600138960 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		72C4863D2AFD378F00138960 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72C4863C2AFD378F00138960 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 72C485E72AFBC2C700138960 /* Project object */;
 }
