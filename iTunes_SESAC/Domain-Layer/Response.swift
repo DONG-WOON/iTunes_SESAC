@@ -1,5 +1,5 @@
 //
-//  Entity.swift
+//  Response.swift
 //  iTunes_SESAC
 //
 //  Created by 서동운 on 11/10/23.
@@ -9,18 +9,18 @@ import Foundation
 
 struct Response: Codable {
     let resultCount: Int
-    let results: [Result]
+    let results: [AppInfo]
 }
 
 // MARK: - Result
-struct Result: Codable {
-    let artistViewURL: String
+struct AppInfo: Codable, Hashable {
+    let artistViewURL: String?
     let screenshotUrls, ipadScreenshotUrls: [String]
     let artworkUrl60, artworkUrl512, artworkUrl100: String
     let supportedDevices, advisories: [String]
     let isGameCenterEnabled: Bool
-    let features: [Feature]
-    let kind: Kind
+    let features: [String]
+    let kind: String
     let contentAdvisoryRating: Rating
     let averageUserRatingForCurrentVersion: Double
     let userRatingCountForCurrentVersion: Int
@@ -31,22 +31,22 @@ struct Result: Codable {
     let languageCodesISO2A: [String]
     let fileSizeBytes: String
     let sellerURL: String?
-    let formattedPrice: FormattedPrice
-    let currentVersionReleaseDate: Date
-    let releaseNotes, minimumOSVersion: String
+    let formattedPrice: String?
+    let currentVersionReleaseDate: String
+    let releaseNotes, minimumOSVersion: String?
     let artistID: Int
     let artistName: String
     let genres: [String]
-    let price: Int
+    let price: Int?
     let description, sellerName: String
     let isVppDeviceBasedLicensingEnabled: Bool
     let primaryGenreName: String
     let primaryGenreID: Int
     let bundleID: String
-    let currency: Currency
+    let currency: String
     let trackID: Int
     let trackName: String
-    let releaseDate: Date
+    let releaseDate: String
     let genreIDS: [String]
     let version: String
     let wrapperType: Kind

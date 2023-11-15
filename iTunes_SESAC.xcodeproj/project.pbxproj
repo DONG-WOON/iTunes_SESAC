@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		720FC3582AFD3CEC005EB32D /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720FC3572AFD3CEC005EB32D /* Entity.swift */; };
+		720FC3582AFD3CEC005EB32D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720FC3572AFD3CEC005EB32D /* Response.swift */; };
 		720FC35B2AFD3ECF005EB32D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720FC35A2AFD3ECF005EB32D /* APIManager.swift */; };
 		720FC35D2AFD3FE5005EB32D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720FC35C2AFD3FE5005EB32D /* SearchViewController.swift */; };
 		720FC35F2AFD4412005EB32D /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720FC35E2AFD4412005EB32D /* DIContainer.swift */; };
@@ -32,13 +32,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		720FC3572AFD3CEC005EB32D /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		720FC3572AFD3CEC005EB32D /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		720FC35A2AFD3ECF005EB32D /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		720FC35C2AFD3FE5005EB32D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		720FC35E2AFD4412005EB32D /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		720FC3612AFD447D005EB32D /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		720FC3642AFD45B4005EB32D /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
-		720FC3682AFD4D3E005EB32D /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		720FC3682AFD4D3E005EB32D /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		720FC3742AFE3E8E005EB32D /* SearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
 		72C485EF2AFBC2C700138960 /* iTunes_SESAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunes_SESAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C485F22AFBC2C700138960 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72C485F42AFBC2C700138960 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +84,13 @@
 				720FC3642AFD45B4005EB32D /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		727B6F3B2B05158A0047F57E /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 		72C485E62AFBC2C700138960 = {
@@ -153,7 +161,8 @@
 		72C4861D2AFD345F00138960 /* Domain-Layer */ = {
 			isa = PBXGroup;
 			children = (
-				720FC3572AFD3CEC005EB32D /* Entity.swift */,
+				727B6F3B2B05158A0047F57E /* DTO */,
+				720FC3572AFD3CEC005EB32D /* Response.swift */,
 			);
 			path = "Domain-Layer";
 			sourceTree = "<group>";
@@ -309,7 +318,7 @@
 				72C4861C2AFD341D00138960 /* UIView+Extension.swift in Sources */,
 				72C485F32AFBC2C700138960 /* AppDelegate.swift in Sources */,
 				720FC35D2AFD3FE5005EB32D /* SearchViewController.swift in Sources */,
-				720FC3582AFD3CEC005EB32D /* Entity.swift in Sources */,
+				720FC3582AFD3CEC005EB32D /* Response.swift in Sources */,
 				72C486402AFD380400138960 /* BaseTabBarController.swift in Sources */,
 				72C486282AFD363C00138960 /* ItunesAPI.swift in Sources */,
 				720FC3622AFD447D005EB32D /* ViewModelProtocol.swift in Sources */,
@@ -559,6 +568,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		};
 		72C4862C2AFD374100138960 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 72C4862B2AFD374100138960 /* XCRemoteSwiftPackageReference "Moya" */;
