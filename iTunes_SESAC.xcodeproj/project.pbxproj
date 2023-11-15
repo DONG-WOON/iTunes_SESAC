@@ -13,12 +13,14 @@
 		720FC35F2AFD4412005EB32D /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720FC35E2AFD4412005EB32D /* DIContainer.swift */; };
 		720FC3622AFD447D005EB32D /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720FC3612AFD447D005EB32D /* ViewModelProtocol.swift */; };
 		720FC3652AFD45B4005EB32D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720FC3642AFD45B4005EB32D /* SearchViewModel.swift */; };
-		720FC3692AFD4D3E005EB32D /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720FC3682AFD4D3E005EB32D /* Extension+UIViewController.swift */; };
+		720FC3692AFD4D3E005EB32D /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720FC3682AFD4D3E005EB32D /* UIViewController+.swift */; };
+		720FC3752AFE3E8E005EB32D /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720FC3742AFE3E8E005EB32D /* SearchViewCell.swift */; };
+		727B6F3E2B05277A0047F57E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 727B6F3D2B05277A0047F57E /* Kingfisher */; };
 		72C485F32AFBC2C700138960 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C485F22AFBC2C700138960 /* AppDelegate.swift */; };
 		72C485F52AFBC2C700138960 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C485F42AFBC2C700138960 /* SceneDelegate.swift */; };
 		72C485FC2AFBC2C900138960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C485FB2AFBC2C900138960 /* Assets.xcassets */; };
 		72C485FF2AFBC2C900138960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C485FD2AFBC2C900138960 /* LaunchScreen.storyboard */; };
-		72C4861C2AFD341D00138960 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C4861B2AFD341D00138960 /* UIView+Extension.swift */; };
+		72C4861C2AFD341D00138960 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C4861B2AFD341D00138960 /* UIView+.swift */; };
 		72C486282AFD363C00138960 /* ItunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C486272AFD363C00138960 /* ItunesAPI.swift */; };
 		72C4862D2AFD374100138960 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 72C4862C2AFD374100138960 /* Moya */; };
 		72C4862F2AFD374100138960 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 72C4862E2AFD374100138960 /* RxMoya */; };
@@ -46,7 +48,7 @@
 		72C485FB2AFBC2C900138960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72C485FE2AFBC2C900138960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72C486002AFBC2C900138960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72C4861B2AFD341D00138960 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		72C4861B2AFD341D00138960 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		72C486272AFD363C00138960 /* ItunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesAPI.swift; sourceTree = "<group>"; };
 		72C4863F2AFD380400138960 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,6 +61,7 @@
 				72C486392AFD376600138960 /* RxRelay in Frameworks */,
 				72C4863E2AFD378F00138960 /* SnapKit in Frameworks */,
 				72C486322AFD375200138960 /* RxDataSources in Frameworks */,
+				727B6F3E2B05277A0047F57E /* Kingfisher in Frameworks */,
 				72C486352AFD376600138960 /* RxBlocking in Frameworks */,
 				72C486372AFD376600138960 /* RxCocoa in Frameworks */,
 				72C4862F2AFD374100138960 /* RxMoya in Frameworks */,
@@ -145,8 +148,8 @@
 		72C486082AFBC37000138960 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				72C4861B2AFD341D00138960 /* UIView+Extension.swift */,
-				720FC3682AFD4D3E005EB32D /* Extension+UIViewController.swift */,
+				72C4861B2AFD341D00138960 /* UIView+.swift */,
+				720FC3682AFD4D3E005EB32D /* UIViewController+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				720FC35C2AFD3FE5005EB32D /* SearchViewController.swift */,
+				720FC3742AFE3E8E005EB32D /* SearchViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -317,14 +321,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				720FC3652AFD45B4005EB32D /* SearchViewModel.swift in Sources */,
-				72C4861C2AFD341D00138960 /* UIView+Extension.swift in Sources */,
+				72C4861C2AFD341D00138960 /* UIView+.swift in Sources */,
+				720FC3752AFE3E8E005EB32D /* SearchViewCell.swift in Sources */,
 				72C485F32AFBC2C700138960 /* AppDelegate.swift in Sources */,
 				720FC35D2AFD3FE5005EB32D /* SearchViewController.swift in Sources */,
 				720FC3582AFD3CEC005EB32D /* Response.swift in Sources */,
 				72C486402AFD380400138960 /* BaseTabBarController.swift in Sources */,
 				72C486282AFD363C00138960 /* ItunesAPI.swift in Sources */,
 				720FC3622AFD447D005EB32D /* ViewModelProtocol.swift in Sources */,
-				720FC3692AFD4D3E005EB32D /* Extension+UIViewController.swift in Sources */,
+				720FC3692AFD4D3E005EB32D /* UIViewController+.swift in Sources */,
 				72C485F52AFBC2C700138960 /* SceneDelegate.swift in Sources */,
 				720FC35F2AFD4412005EB32D /* DIContainer.swift in Sources */,
 				720FC35B2AFD3ECF005EB32D /* APIManager.swift in Sources */,

@@ -27,12 +27,16 @@ extension ItunesAPI: TargetType {
     }
     
     var task: Moya.Task {
-        let parameters: [String: Any] = [
-            "country": "KR",
-            "lang": "ko_kr",
-            "entity": "software"
-        ]
-        return .requestParameters(parameters: parameters, encoding: URLEncoding.queryString)
+        switch self {
+        case .search(term: let term):
+            let parameters: [String: Any] = [
+                "term": term,
+                "country": "KR",
+                "lang": "ko_kr",
+                "entity": "software"
+            ]
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.queryString)
+        }
     }
     
     var headers: [String : String]? {

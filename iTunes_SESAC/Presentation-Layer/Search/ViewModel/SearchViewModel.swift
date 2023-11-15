@@ -15,25 +15,25 @@ final class SearchViewModel: ViewModelProtocol {
     }
     
     struct Output {
-        let loadResult: PublishSubject<Response>
+        let loadResult: PublishSubject<[AppInfo]>
     }
     
     private let disposable = DisposeBag()
     
     func transform(input: Input) -> Output {
         
-        let model = PublishSubject<Response>()
+        let model = PublishSubject<[AppInfo]>()
             
         input.searchButtonDidTapped
             .withLatestFrom(input.searchText, resultSelector: { $1! })
             .flatMap { return APIManager.shared.search(term: $0) }
+            .map(\.results)
             .subscribe(with: self) { owner, value in
                 model.onNext(value)
             } onError: { owner, error in
                 print(error)
             }
             .disposed(by: disposable)
-            
         
         return Output(loadResult: model)
     }
@@ -41,7 +41,4 @@ final class SearchViewModel: ViewModelProtocol {
 
 extension SearchViewModel {
     
-    func viewDidLoad() {
-        
-    }
 }

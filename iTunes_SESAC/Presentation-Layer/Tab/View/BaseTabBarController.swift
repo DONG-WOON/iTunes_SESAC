@@ -12,8 +12,8 @@ final class TabBarController: UITabBarController {
     // MARK: Properties
     
     let searchVC = SearchViewController(viewModel: SearchViewModel())
-        .configureTabBarItem(title: "Search", image: UIImage(named: "magnifyingglass"))
         .embedNavigationController()
+        .configureTabBarItem(title: "Search", image: UIImage(systemName: "magnifyingglass"))
     
     // MARK: View Life Cycle
 
