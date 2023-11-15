@@ -253,6 +253,7 @@
 				72C486382AFD376600138960 /* RxRelay */,
 				72C4863A2AFD376600138960 /* RxSwift */,
 				72C4863D2AFD378F00138960 /* SnapKit */,
+				727B6F3D2B05277A0047F57E /* Kingfisher */,
 			);
 			productName = iTunes_SESAC;
 			productReference = 72C485EF2AFBC2C700138960 /* iTunes_SESAC.app */;
@@ -287,6 +288,7 @@
 				72C486302AFD375200138960 /* XCRemoteSwiftPackageReference "RxDataSources" */,
 				72C486332AFD376600138960 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				72C4863C2AFD378F00138960 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				727B6F3C2B05277A0047F57E /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 72C485F02AFBC2C700138960 /* Products */;
 			projectDirPath = "";
@@ -533,6 +535,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		727B6F3C2B05277A0047F57E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		72C4862B2AFD374100138960 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
@@ -568,6 +578,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		727B6F3D2B05277A0047F57E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 727B6F3C2B05277A0047F57E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 		72C4862C2AFD374100138960 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
