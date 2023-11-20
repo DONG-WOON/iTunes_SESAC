@@ -27,9 +27,13 @@ final class SearchViewModel: ViewModelProtocol {
         input.searchButtonDidTapped
             .withLatestFrom(input.searchText, resultSelector: { $1! })
             .flatMap { return APIManager.shared.search(term: $0) }
-            .map(\.results)
             .subscribe(with: self) { owner, value in
-                model.onNext(value)
+                switch value {
+                case .success(let response):
+                    model.onNext(response.results)
+                case .failure(let error):
+                    print(error)
+                }
             } onError: { owner, error in
                 print(error)
             }
